@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   position: relative;
+  border: 2px solid red;
 }
 
 .h-title {
@@ -66,6 +67,7 @@ body {
 .swiper-pagination {
   display: flex;
   align-items: center;
+  width: fit-content !important;
   bottom: 0rem !important;
   left: 2rem !important;
 }
@@ -105,13 +107,12 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  width: 70%;
 }
 
 .landing .left h1 {
   font-size: 28px;
   font-weight: 600;
-  line-height: 40px;
+  line-height: 30px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -486,6 +487,10 @@ form button {
 @media screen and (min-width: 641px) {
   .project-container > div {
     flex-direction: row;
+  }
+
+  .landing .left {
+    width: 70%;
   }
 
   .stats-container {
